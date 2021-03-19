@@ -1,0 +1,15 @@
+table {
+  width: 100%;
+}
+
+td {
+  vertical-align: top;
+}
+
+td:first-child {
+  text-align: right;
+}
+
+td:last-child {
+  text-align: left;
+}

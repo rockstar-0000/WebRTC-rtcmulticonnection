@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="/demos/stylesheet.css">
+  <script src="/demos/js/jquery.min.js"></script>
+  <script src="/demos/js/html2canvas.min.js"></script>
+  <script src="/demos/js/canvas2image.js"></script>
+  <script src="/node_modules/webrtc-adapter/out/adapter.js"></script>
+  <script src="/dist/RTCMultiConnection.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/node_modules/fbr/FileBufferReader.js"></script>
+  <script src="/node_modules/canvas-designer/dev/webrtc-handler.js"></script>
+  <script src="/node_modules/canvas-designer/canvas-designer-widget.js"></script>
+
+  <link rel="stylesheet" href="/demos/callbyusername/call-by-username.css">
+</head>
+<body>
+  <section class="make-center">
+    <table>
+        <tr>
+            <td style="padding-bottom: 40px;">
+                <label for="current-username">Your UserName:</label>
+                <input type="text" id="current-username" value="you" autocorrect=off autocapitalize=off size=20>
+            </td>
+            <td>
+                <button id="change-your-own-username">Available</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="callee-username">Callee UserName:</label>
+                <input type="text" id="callee-username" value="he" autocorrect=off autocapitalize=off size=20>
+            </td>
+            <td>
+                <button id="join-callee-using-his-username" disabled>Video Call</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <div id="videos-container" style="margin: 20px 0;"></div>
+                <canvas id="temp-stream-canvas" style="display: none;"></canvas>
+            </td>
+        </tr>
+    </table>    
+  </section>
+
+<script src="/dist/RTCMultiConnection.min.js"></script>
+<script src="/node_modules/webrtc-adapter/out/adapter.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<!-- custom layout for HTML5 audio/video elements -->
+<link rel="stylesheet" href="/dev/getHTMLMediaElement.css">
+<script src="/dev/getHTMLMediaElement.js"></script>
+<script src="/demos/callbyusername/call-by-username.js"></script>
+
+  <!-- <footer>
+    <small id="send-message"></small>
+  </footer> -->
+
+  <script src="https://www.webrtc-experiment.com/common.js"></script>
+</body>
+</html>
