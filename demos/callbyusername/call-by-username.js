@@ -72,7 +72,7 @@ var onShareVideo = function (id, width) {
   designer.setSelected("pencil");
 
   designer.setTools({
-    dragSingle: true,
+    dragSingle: false,
     pencil: true,
     text: false,
     image: false,
@@ -85,7 +85,7 @@ var onShareVideo = function (id, width) {
     rectangle: true,
     quadratic: false,
     bezier: false,
-    marker: true,
+    marker: false,
     zoom: false,
     lineWidth: false,
     colorsPicker: false,
