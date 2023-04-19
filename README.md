@@ -14,4 +14,6 @@ git clone https://github.com/gitnodemasters/RTCmulti-annotation.git
 npm install
 
 node server
+
+new release coming soon
 ```
