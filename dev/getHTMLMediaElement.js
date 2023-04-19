@@ -194,7 +194,7 @@ function getHTMLMediaElement(mediaElement, config) {
                 launchFullscreen(mediaElementContainer);
             }
         };
-
+        // funciton to launch full screen mode
         function launchFullscreen(element) {
             if (element.requestFullscreen) {
                 element.requestFullscreen();
@@ -204,7 +204,7 @@ function getHTMLMediaElement(mediaElement, config) {
                 element.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
             }
         }
-
+        // function to exit the full screen mode
         function exitFullScreen() {
             if (document.fullscreen) {
                 document.exitFullscreen();
@@ -218,7 +218,7 @@ function getHTMLMediaElement(mediaElement, config) {
                 document.webkitExitFullscreen();
             }
         }
-
+        // function to check screenState change
         function screenStateChange(e) {
             if (e.srcElement != mediaElementContainer) return;
 
